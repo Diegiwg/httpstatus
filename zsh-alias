@@ -1,0 +1,9 @@
+#!/bin/bash
+
+function status {
+    if [ "$1" != "" ]; then
+        rg "$1" /data/hdd1/httpstatus
+    else
+        echo "usage: status <http-code>"
+    fi
+}
